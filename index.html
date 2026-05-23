@@ -45,7 +45,7 @@
         <div class="home-buttons">
           <a href="#" class="btn btn-primary" data-index="3">Проекты</a>
           <a href="#" class="btn btn-outline" data-index="4">Контакты</a>
-          <a href="resume.pdf" class="btn btn-resume" download>Скачать резюме</a>
+          <a href="#" class="btn btn-resume" id="downloadResumeBtn">Скачать резюме</a>
         </div>
         <div class="social-icons">
           <a href="https://github.com/timurhab-rgb" target="_blank"><i class="bi bi-github"></i></a>
@@ -128,5 +128,18 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+  document.getElementById('downloadResumeBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    // Укажи правильный путь к файлу
+    const fileUrl = 'resume.pdf';
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = 'Тимур_Хабибулин_резюме.pdf'; // желаемое имя скачанного файла
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
 </body>
 </html>
