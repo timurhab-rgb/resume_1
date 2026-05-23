@@ -52,7 +52,7 @@ body {
   width: 100%;
 }
 
-/* Навигация десктоп */
+/* Навигация  */
 .navbar {
   position: fixed;
   top: 0;
@@ -116,7 +116,7 @@ body {
   text-decoration: none;
 }
 
-/* Боковая навигация (только мобильные) */
+/* Боковая навигация (только телефоны) */
 .alphabet-nav {
   position: fixed;
   right: 0;
@@ -155,7 +155,7 @@ body {
   border-radius: 8px;
 }
 
-/* Главная (десктоп) */
+/* Главная  */
 .home-container {
   display: flex;
   align-items: center;
@@ -312,7 +312,7 @@ h2 {
   font-size: 1rem;
 }
 
-/* Проекты (ДЕСКТОП - крупные карточки) */
+/* Проекты */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -413,7 +413,7 @@ h2 {
   font-size: 1.2rem;
 }
 
-/* ========== МОБИЛЬНЫЕ (до 768px) ========== */
+/* телефоны до 768px  */
 @media (max-width: 767px) {
   body {
     font-size: 12px;
@@ -516,13 +516,13 @@ h2 {
     font-size: 0.7rem;
     margin: 0.2rem 0;
   }
-  /* ПРОЕКТЫ — МАЛЕНЬКИЕ И СО СДВИГОМ ВЛЕВО */
+  /* проекты */
   .projects-grid {
-    display: block; /* отключаем грид для ручного управления */
+    display: block;
   }
   .project-card {
-    width: calc(100%); /* на всю ширину с отступом справа, чтобы сдвинуть влево */
-    margin: 0 auto 0 0;       /* прижимаем к левому краю */
+    width: calc(100%);
+    margin: 0 auto 0 0;
     margin-bottom: 12px;
   }
   .project-card img {
@@ -583,7 +583,7 @@ h2 {
   }
 }
 
-/* Экстремально маленькие телефоны (до 400px) */
+/*  маленькие телефоны (до 400px) */
 @media (max-width: 400px) {
   .avatar-img {
     width: 60%;
