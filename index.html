@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Тимур Хабибулин | Python-разработчик</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">T.H.</a>
+    <ul class="nav-list">
+      <li><a class="nav-link" data-index="0">Главная</a></li>
+      <li><a class="nav-link" data-index="1">Обо мне</a></li>
+      <li><a class="nav-link" data-index="2">Навыки</a></li>
+      <li><a class="nav-link" data-index="3">Проекты</a></li>
+      <li><a class="nav-link" data-index="4">Контакты</a></li>
+    </ul>
+    <a href="#" class="btn-talk" data-index="4">Связаться</a>
+  </div>
+</nav>
+
+<div class="alphabet-nav">
+  <ul>
+    <li><a data-index="0">01</a></li>
+    <li><a data-index="1">02</a></li>
+    <li><a data-index="2">03</a></li>
+    <li><a data-index="3">04</a></li>
+    <li><a data-index="4">05</a></li>
+  </ul>
+</div>
+
+<main>
+  <section class="section center" id="home">
+    <div class="container home-container">
+      <div class="home-content">
+        <p class="greeting">Привет, я</p>
+        <h1>Тимур Хабибулин</h1>
+        <p class="subtitle">Начинающий Python-разработчик</p>
+        <div class="quote"><i class="bi bi-quote"></i><span>"If I play, I play to win"</span></div>
+        <div class="home-buttons">
+          <a href="#" class="btn btn-primary" data-index="3">Проекты</a>
+          <a href="#" class="btn btn-outline" data-index="4">Контакты</a>
+          <a href="resume.pdf" class="btn btn-resume" download>Скачать резюме</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/timurhab-rgb" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://t.me/mirtum06" target="_blank"><i class="bi bi-telegram"></i></a>
+        </div>
+      </div>
+      <div class="home-avatar">
+        <img src="images/profile.jpg" alt="Тимур" class="avatar-img" onerror="this.src='https://placehold.co/400x400?text=Timur'">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <div class="about-grid">
+        <div class="info-card">
+          <div class="info-item"><i class="bi bi-person"></i><span>Хабибулин Тимур Русланович, 20 лет</span></div>
+          <div class="info-item"><i class="bi bi-building"></i><span>РУТ (МИИТ), бакалавриат, 2 курс</span></div>
+        </div>
+        <div class="info-card">
+          <h3><i class="bi bi-laptop"></i> Доп. образование</h3>
+          <ul class="edu-list">
+            <li>Яндекс Лицей "Основы Python"</li>
+            <li>Stepik "Поколение Python: начинающие"</li>
+            <li>Stepik "Поколение Python: продвинутые"</li>
+            <li>Stepik "Веб-разработка: HTML и CSS"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <h2>Навыки и технологии</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="bi bi-code-slash"></i><h3>Основные</h3><ul><li>Парсинг сайтов</li><li>Адаптивные сайты</li><li>Микроконтроллеры</li><li>Простые API</li></ul></div>
+        <div class="skill-card"><i class="bi bi-stack"></i><h3>Технологии</h3><ul><li>Python</li><li>HTML/CSS</li><li>Git</li></ul></div>
+        <div class="skill-card"><i class="bi bi-tools"></i><h3>Инструменты</h3><ul><li>Git (GitFlow)</li><li>Docker (compose)</li><li>Оптимизация образов</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h2>Проекты</h2>
+      <div class="projects-grid">
+        <div class="project-card"><img src="images/project-parser.jpg" alt="Парсер"><div><h3>Парсер сайтов</h3><p>Сбор данных с веб-ресурсов, автоматизация.</p></div></div>
+        <div class="project-card"><img src="images/project-rails.jpg" alt="ЖД"><div><h3>ЖД рельсы + Telegram бот</h3><p>Мониторинг рельс с уведомлениями.</p></div></div>
+        <div class="project-card"><img src="images/project-weather.jpg" alt="Погода"><div><h3>Сайт погоды (Docker)</h3><p>Развёрнут с docker-compose.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Контакты</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item"><i class="bi bi-telephone"></i><div><a href="tel:+79018221879">+7 901 822 18 79</a></div></div>
+          <div class="contact-item"><i class="bi bi-envelope"></i><div><a href="mailto:timurhab@icloud.com">timurhab@icloud.com</a></div></div>
+          <div class="contact-item"><i class="bi bi-telegram"></i><div><a href="https://t.me/mirtum06">@mirtum06</a></div></div>
+          <div class="contact-item"><i class="bi bi-github"></i><div><a href="https://github.com/timurhab-rgb">timurhab-rgb</a></div></div>
+        </div>
+        <div class="contact-decoration"><i class="bi bi-chat-dots"></i><p>Открыт к сотрудничеству</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2025 Тимур Хабибулин</p>
+    <div class="footer-social">
+      <a href="https://github.com/timurhab-rgb"><i class="bi bi-github"></i></a>
+      <a href="https://t.me/mirtum06"><i class="bi bi-telegram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
