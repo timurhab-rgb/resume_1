@@ -163,13 +163,18 @@ body {
   gap: 3rem;
 }
 .home-content { flex: 1; }
-.home-avatar { flex: 0.8; display: flex; justify-content: center; }
+.home-avatar {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .avatar-img {
   width: 260px;
-  height: auto;
+  height: 260px;
+  object-fit: cover;
   border-radius: 50%;
-  background: linear-gradient(145deg, #2c2f36, #1a1c22);
-  padding: 8px;
+  display: block;
   box-shadow: 0 20px 35px rgba(0,0,0,0.5);
 }
 .greeting {
@@ -408,7 +413,7 @@ h2 {
   font-size: 1.2rem;
 }
 
-/* ========== МОБИЛЬНЫЕ (до 768px) — КАРТОЧКИ ПРОЕКТОВ СТАНОВЯТСЯ МАЛЕНЬКИМИ ========== */
+/* ========== МОБИЛЬНЫЕ (до 768px) ========== */
 @media (max-width: 767px) {
   body {
     font-size: 12px;
@@ -432,28 +437,29 @@ h2 {
     gap: 0.5rem;
   }
   .avatar-img {
-    width: 100px;
-    padding: 3px;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
   }
   .greeting {
-    font-size: 0.8rem;
+    font-size: 3rem;
   }
   h1 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin: 0.2rem 0;
   }
   .subtitle {
-    font-size: 0.85rem;
+    font-size: 1rem;
     padding-left: 0.5rem;
     margin: 0.5rem 0;
   }
   .quote {
-    font-size: 0.7rem;
+    font-size: 1rem;
     justify-content: center;
     margin: 0.3rem 0;
   }
   .home-buttons {
-    gap: 0.4rem;
+    gap: 1rem;
     margin: 0.8rem 0;
   }
   .btn {
@@ -510,9 +516,14 @@ h2 {
     font-size: 0.7rem;
     margin: 0.2rem 0;
   }
-  /* ПРОЕКТЫ — ТЕПЕРЬ МАЛЕНЬКИЕ ТОЛЬКО НА ТЕЛЕФОНЕ */
+  /* ПРОЕКТЫ — МАЛЕНЬКИЕ И СО СДВИГОМ ВЛЕВО */
   .projects-grid {
-    gap: 0.8rem;
+    display: block; /* отключаем грид для ручного управления */
+  }
+  .project-card {
+    width: calc(100%); /* на всю ширину с отступом справа, чтобы сдвинуть влево */
+    margin: 0 auto 0 0;       /* прижимаем к левому краю */
+    margin-bottom: 12px;
   }
   .project-card img {
     height: 110px;
@@ -575,13 +586,14 @@ h2 {
 /* Экстремально маленькие телефоны (до 400px) */
 @media (max-width: 400px) {
   .avatar-img {
-    width: 80px;
+    width: 60%;
+    height: 60%;
   }
   h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   .subtitle {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .btn {
     padding: 2px 8px;
@@ -591,9 +603,8 @@ h2 {
     font-size: 1rem;
   }
   .project-card {
-    margin-left: 0;               /* убираем центрирование */
-    margin-right: auto;           /* сдвигаем влево */
-    width: 80%;
+    width: calc(100%);
+    margin: 0 auto 8px 0;
   }
   .project-card img {
     height: 70px;
